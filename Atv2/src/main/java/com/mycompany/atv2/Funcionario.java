@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.atv2;
 
-/**
- *
- * @author pedro
- */
-public class Funcionario {
+public class Funcionario extends Pessoa {
+
+    //Declarar variaveis de Pessoa
+    public String cargo;
+    public int RGM;
+
+    //Constructor para chamar as variveis de Pessoa e declarar as novas
+    Funcionario(String nome, String CPF, int dta,String cargo,int RGM) {
+        super(nome, CPF, dta);
+        this.cargo = cargo;
+        this.RGM = RGM;
+    }
+
+    //Funcao para exibir as informacoes
+    @Override
+    public void exibirInfo() {
+        super.exibirInfo();
+        System.out.println("Cargo" + this.cargo);
+        System.out.println("RGM: " + this.RGM);
+    }
     
 }

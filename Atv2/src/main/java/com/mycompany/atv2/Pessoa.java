@@ -8,13 +8,16 @@ public class Pessoa {
     public int dta;
     
     //Constructor
-    Pessoa(String nome, String CPF,int dta){
+    public Pessoa(String nome, String CPF,int dta){
         this.nome = nome;
         this.CPF = CPF;
         this.dta = dta;
     }
     
+    //Funcao para exibir as informacoes
     public void exibirInfo(){
-       
+       System.out.println("Nome: " + this.nome);
+       System.out.println("CPF: " + this.CPF);
+       System.out.println("Data de Nascimento: " + this.dta);
     }
 }

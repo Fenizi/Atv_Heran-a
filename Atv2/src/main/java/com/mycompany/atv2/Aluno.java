@@ -17,5 +17,7 @@ public class Aluno extends Pessoa {
     @Override
     public void exibirInfo() {
         super.exibirInfo();
+        System.out.println("RA: " + this.RA);
+        System.out.println("Curso: " + this.curso);
     }
 }

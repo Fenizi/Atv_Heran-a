@@ -1,16 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.atv2;
 
-/**
- *
- * @author pedro
- */
 public class Atv2 {
 
-    public static void main(String[] args) {
+    Pessoa p1 = new Pessoa("Pedro" , "12345678998" , 22072005);
 
-    }
+    p1.exibirInfo();
 }
+

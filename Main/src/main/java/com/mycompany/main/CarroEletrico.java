@@ -1,12 +1,12 @@
 package com.mycompany.main;
 
-public class CarroEletrico extends Carro {
+public class CarroEletrico extends Veiculo {
       //Classe CarroEletrico
         public int capacidadeBateria;//variavel
 
         //Constructor
         public CarroEletrico(String marca, String modelo, int ano, int capacidadedeBateria) {
-            super(marca, modelo, ano, "Eletrico");
+            super(marca, modelo, ano);
             this.capacidadeBateria = capacidadedeBateria;
         }
         
